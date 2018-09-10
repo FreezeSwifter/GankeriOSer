@@ -19,5 +19,6 @@ target 'GankiOSer' do
   pod 'SVProgressHUD'
   pod 'Hero'
   pod "CollectionKit"
+  pod 'SideMenu'
 
 end

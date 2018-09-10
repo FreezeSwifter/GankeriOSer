@@ -12,6 +12,8 @@
 		9CC521902146172600F776E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC5218E2146172600F776E3 /* Main.storyboard */; };
 		9CC521922146172700F776E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC521912146172700F776E3 /* Assets.xcassets */; };
 		9CC521952146172700F776E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC521932146172700F776E3 /* LaunchScreen.storyboard */; };
+		9CC5219E21466E6600F776E3 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5219D21466E6600F776E3 /* BaseNavigationController.swift */; };
+		9CC521A0214671A200F776E3 /* LeftSideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5219F214671A200F776E3 /* LeftSideMenuController.swift */; };
 		C6A434979F3B42EA6E481D21 /* Pods_GankiOSer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8552018BFDF864DFCF34B0 /* Pods_GankiOSer.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		9CC521912146172700F776E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CC521942146172700F776E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CC521962146172700F776E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CC5219D21466E6600F776E3 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		9CC5219F214671A200F776E3 /* LeftSideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideMenuController.swift; sourceTree = "<group>"; };
 		9E8552018BFDF864DFCF34B0 /* Pods_GankiOSer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GankiOSer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,7 +75,9 @@
 			isa = PBXGroup;
 			children = (
 				9CC5218A2146172600F776E3 /* AppDelegate.swift */,
+				9CC5219D21466E6600F776E3 /* BaseNavigationController.swift */,
 				9CC5218C2146172600F776E3 /* ViewController.swift */,
+				9CC5219F214671A200F776E3 /* LeftSideMenuController.swift */,
 				9CC5218E2146172600F776E3 /* Main.storyboard */,
 				9CC521912146172700F776E3 /* Assets.xcassets */,
 				9CC521932146172700F776E3 /* LaunchScreen.storyboard */,
@@ -197,6 +203,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
@@ -217,6 +224,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
@@ -232,8 +240,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CC521A0214671A200F776E3 /* LeftSideMenuController.swift in Sources */,
 				9CC5218D2146172600F776E3 /* ViewController.swift in Sources */,
 				9CC5218B2146172600F776E3 /* AppDelegate.swift in Sources */,
+				9CC5219E21466E6600F776E3 /* BaseNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +391,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UR9T6JCF3L;
 				INFOPLIST_FILE = GankiOSer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uoko.GankiOSer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -397,7 +411,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UR9T6JCF3L;
 				INFOPLIST_FILE = GankiOSer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uoko.GankiOSer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
