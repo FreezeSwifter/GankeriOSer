@@ -14,6 +14,19 @@
 		9CC521952146172700F776E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC521932146172700F776E3 /* LaunchScreen.storyboard */; };
 		9CC5219E21466E6600F776E3 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5219D21466E6600F776E3 /* BaseNavigationController.swift */; };
 		9CC521A0214671A200F776E3 /* LeftSideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5219F214671A200F776E3 /* LeftSideMenuController.swift */; };
+		9CF74587214756C5005E941D /* CenteredCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF74586214756C5005E941D /* CenteredCollectionViewFlowLayout.swift */; };
+		9CF7458B214759A7005E941D /* HomeRecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF74589214759A7005E941D /* HomeRecommendCell.swift */; };
+		9CF7458C214759A7005E941D /* HomeRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CF7458A214759A7005E941D /* HomeRecommendCell.xib */; };
+		9CF74591214794C5005E941D /* InterfaceNetworkMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF74590214794C5005E941D /* InterfaceNetworkMethod.swift */; };
+		9CF7459321479565005E941D /* NetworkMethodImplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7459221479565005E941D /* NetworkMethodImplement.swift */; };
+		9CF7459521479843005E941D /* LoadingPlugin+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7459421479843005E941D /* LoadingPlugin+Moya.swift */; };
+		9CF745972147985E005E941D /* NetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF745962147985E005E941D /* NetworkLoggerPlugin.swift */; };
+		9CF74599214798EF005E941D /* RxMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF74598214798EF005E941D /* RxMoyaProvider.swift */; };
+		9CF7459B21479FCB005E941D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7459A21479FCB005E941D /* API.swift */; };
+		9CF7459E2147A0DF005E941D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7459D2147A0DF005E941D /* HomeViewModel.swift */; };
+		9CF745A12147A843005E941D /* MeituModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF745A02147A843005E941D /* MeituModel.swift */; };
+		9CF745A52147AF3F005E941D /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF745A32147AF3E005E941D /* NSObject+Rx.swift */; };
+		9CF745A62147AF3F005E941D /* HasDisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF745A42147AF3E005E941D /* HasDisposeBag.swift */; };
 		C6A434979F3B42EA6E481D21 /* Pods_GankiOSer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8552018BFDF864DFCF34B0 /* Pods_GankiOSer.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +42,19 @@
 		9CC521962146172700F776E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CC5219D21466E6600F776E3 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		9CC5219F214671A200F776E3 /* LeftSideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideMenuController.swift; sourceTree = "<group>"; };
+		9CF74586214756C5005E941D /* CenteredCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteredCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		9CF74589214759A7005E941D /* HomeRecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecommendCell.swift; sourceTree = "<group>"; };
+		9CF7458A214759A7005E941D /* HomeRecommendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeRecommendCell.xib; sourceTree = "<group>"; };
+		9CF74590214794C5005E941D /* InterfaceNetworkMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceNetworkMethod.swift; sourceTree = "<group>"; };
+		9CF7459221479565005E941D /* NetworkMethodImplement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMethodImplement.swift; sourceTree = "<group>"; };
+		9CF7459421479843005E941D /* LoadingPlugin+Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoadingPlugin+Moya.swift"; sourceTree = "<group>"; };
+		9CF745962147985E005E941D /* NetworkLoggerPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLoggerPlugin.swift; sourceTree = "<group>"; };
+		9CF74598214798EF005E941D /* RxMoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMoyaProvider.swift; sourceTree = "<group>"; };
+		9CF7459A21479FCB005E941D /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9CF7459D2147A0DF005E941D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9CF745A02147A843005E941D /* MeituModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeituModel.swift; sourceTree = "<group>"; };
+		9CF745A32147AF3E005E941D /* NSObject+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
+		9CF745A42147AF3E005E941D /* HasDisposeBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasDisposeBag.swift; sourceTree = "<group>"; };
 		9E8552018BFDF864DFCF34B0 /* Pods_GankiOSer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GankiOSer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,6 +100,11 @@
 		9CC521892146172600F776E3 /* GankiOSer */ = {
 			isa = PBXGroup;
 			children = (
+				9CF7458521475656005E941D /* Vender */,
+				9CF7458D21476206005E941D /* NewworkTool */,
+				9CF7459F2147A128005E941D /* Models */,
+				9CF7459C2147A0BE005E941D /* ViewModels */,
+				9CF745882147596E005E941D /* Views */,
 				9CC5218A2146172600F776E3 /* AppDelegate.swift */,
 				9CC5219D21466E6600F776E3 /* BaseNavigationController.swift */,
 				9CC5218C2146172600F776E3 /* ViewController.swift */,
@@ -84,6 +115,62 @@
 				9CC521962146172700F776E3 /* Info.plist */,
 			);
 			path = GankiOSer;
+			sourceTree = "<group>";
+		};
+		9CF7458521475656005E941D /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				9CF745A22147AF3E005E941D /* NSObject+Rx */,
+				9CF74586214756C5005E941D /* CenteredCollectionViewFlowLayout.swift */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		9CF745882147596E005E941D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CF74589214759A7005E941D /* HomeRecommendCell.swift */,
+				9CF7458A214759A7005E941D /* HomeRecommendCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9CF7458D21476206005E941D /* NewworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				9CF745962147985E005E941D /* NetworkLoggerPlugin.swift */,
+				9CF7459421479843005E941D /* LoadingPlugin+Moya.swift */,
+				9CF74590214794C5005E941D /* InterfaceNetworkMethod.swift */,
+				9CF7459221479565005E941D /* NetworkMethodImplement.swift */,
+				9CF74598214798EF005E941D /* RxMoyaProvider.swift */,
+				9CF7459A21479FCB005E941D /* API.swift */,
+			);
+			path = NewworkTool;
+			sourceTree = "<group>";
+		};
+		9CF7459C2147A0BE005E941D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9CF7459D2147A0DF005E941D /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9CF7459F2147A128005E941D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9CF745A02147A843005E941D /* MeituModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9CF745A22147AF3E005E941D /* NSObject+Rx */ = {
+			isa = PBXGroup;
+			children = (
+				9CF745A32147AF3E005E941D /* NSObject+Rx.swift */,
+				9CF745A42147AF3E005E941D /* HasDisposeBag.swift */,
+			);
+			path = "NSObject+Rx";
 			sourceTree = "<group>";
 		};
 		D304FECF88C64ADF10CDC498 /* Frameworks */ = {
@@ -155,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CC521952146172700F776E3 /* LaunchScreen.storyboard in Resources */,
+				9CF7458C214759A7005E941D /* HomeRecommendCell.xib in Resources */,
 				9CC521922146172700F776E3 /* Assets.xcassets in Resources */,
 				9CC521902146172600F776E3 /* Main.storyboard in Resources */,
 			);
@@ -204,6 +292,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
@@ -225,6 +314,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
@@ -242,8 +332,20 @@
 			files = (
 				9CC521A0214671A200F776E3 /* LeftSideMenuController.swift in Sources */,
 				9CC5218D2146172600F776E3 /* ViewController.swift in Sources */,
+				9CF74591214794C5005E941D /* InterfaceNetworkMethod.swift in Sources */,
 				9CC5218B2146172600F776E3 /* AppDelegate.swift in Sources */,
+				9CF7458B214759A7005E941D /* HomeRecommendCell.swift in Sources */,
+				9CF7459321479565005E941D /* NetworkMethodImplement.swift in Sources */,
+				9CF7459521479843005E941D /* LoadingPlugin+Moya.swift in Sources */,
+				9CF745972147985E005E941D /* NetworkLoggerPlugin.swift in Sources */,
+				9CF7459E2147A0DF005E941D /* HomeViewModel.swift in Sources */,
+				9CF74587214756C5005E941D /* CenteredCollectionViewFlowLayout.swift in Sources */,
+				9CF74599214798EF005E941D /* RxMoyaProvider.swift in Sources */,
+				9CF745A62147AF3F005E941D /* HasDisposeBag.swift in Sources */,
+				9CF7459B21479FCB005E941D /* API.swift in Sources */,
+				9CF745A12147A843005E941D /* MeituModel.swift in Sources */,
 				9CC5219E21466E6600F776E3 /* BaseNavigationController.swift in Sources */,
+				9CF745A52147AF3F005E941D /* NSObject+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
