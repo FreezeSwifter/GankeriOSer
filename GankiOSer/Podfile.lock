@@ -25,6 +25,7 @@ PODS:
     - RxSwift (~> 4.0)
   - RxSwift (4.2.0)
   - SideMenu (4.0.0)
+  - SnapKit (4.0.0)
   - SVProgressHUD (2.2.5)
   - SwiftDate (5.0.7)
   - Then (2.3.0)
@@ -42,6 +43,7 @@ DEPENDENCIES:
   - RxDataSources
   - RxSwift
   - SideMenu
+  - SnapKit
   - SVProgressHUD
   - SwiftDate
   - Then
@@ -63,6 +65,7 @@ SPEC REPOS:
     - RxDataSources
     - RxSwift
     - SideMenu
+    - SnapKit
     - SVProgressHUD
     - SwiftDate
     - Then
@@ -83,10 +86,11 @@ SPEC CHECKSUMS:
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   SideMenu: 70ee5657df63ec3382660ec4ef470bf1cf5db07d
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftDate: f053fb89250c59af5eff777f3b832d2b9dd57403
   Then: ee21c97b85ff6062b9b0080c9abb1eea46743345
 
-PODFILE CHECKSUM: cdd49a96b2069d7d392e8bfb71f889d9fb386098
+PODFILE CHECKSUM: eed1be504ed30a6d506b48f58e87f9322aef7ec4
 
 COCOAPODS: 1.5.3

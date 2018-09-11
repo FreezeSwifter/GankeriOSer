@@ -20,5 +20,6 @@ target 'GankiOSer' do
   pod 'Hero'
   pod "CollectionKit"
   pod 'SideMenu'
+  pod 'SnapKit'
 
 end
