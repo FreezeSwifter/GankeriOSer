@@ -37,7 +37,7 @@ protocol GankViewModelType {
 
 class HomeViewModel: NSObject {
     
-    let models = Variable<[MeituModel?]>([])
+    let models = BehaviorRelay<[MeituModel?]>(value: [])
 }
 
 extension HomeViewModel: GankViewModelType {
@@ -77,8 +77,8 @@ extension HomeViewModel: GankViewModelType {
         
         PrettyPicturesProvider.requestMapJSONArray(input.category, classType: MeituModel.self).subscribe(onNext: {[weak self] (items) in
             
-            self?.models.value = items
-            
+            self?.models.accept(items)
+        
         }).disposed(by: rx.disposeBag)
         
         return output
