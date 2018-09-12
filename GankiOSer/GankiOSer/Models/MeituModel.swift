@@ -14,4 +14,8 @@ struct MeituModel: HandyJSON {
     var publishedAt: String!
     var type: String!
     var url: String!
+    
+    func fetchTime() -> String {
+        return  String(publishedAt[...10]).replacingOccurrences(of: "T", with: "")
+    }
 }

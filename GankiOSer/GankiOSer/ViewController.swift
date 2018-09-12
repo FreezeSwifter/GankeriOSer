@@ -13,10 +13,11 @@ import Kingfisher
 import RxDataSources
 import RxCocoa
 import RxSwift
+import Hero
 
 class ViewController: UIViewController {
     
-   lazy var menuLeftNavigationController: UISideMenuNavigationController = {
+    lazy var menuLeftNavigationController: UISideMenuNavigationController = {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "LeftSideMenuController")
         let side = UISideMenuNavigationController(rootViewController: vc)
@@ -38,13 +39,34 @@ class ViewController: UIViewController {
     }
     
     func setupRx() {
-        //创建数据源
+        // figure out cell
         dataSource = RxCollectionViewSectionedReloadDataSource(configureCell: { (ds, ct, indexpath, item) -> HomeRecommendCell in
             let cell = ct.dequeueReusableCell(withReuseIdentifier: "HomeRecommendCell", for: indexpath) as! HomeRecommendCell
             cell.bkImageView.kf.setImage(with: URL(string: item.url))
-            
+            cell.categoryLabel.text = item.fetchTime()
             return cell
         })
+        
+        Observable.zip(
+            collectionView
+                .rx
+                .itemSelected
+            ,collectionView
+                .rx
+                .modelSelected(MeituModel.self))
+            .bind{ [unowned self] indexPath, model in
+                
+                let cell = self.collectionView.cellForItem(at: indexPath) as! HomeRecommendCell
+                cell.bkImageView.hero.id = indexPath.item.description
+                
+                let sb = UIStoryboard(name: "Main", bundle: nil)
+                let vc = sb.instantiateViewController(withIdentifier: "ImageShowController") as! ImageShowController
+                vc.heroID = indexPath.item.description
+            
+                self.navigationController?.pushViewController(vc, animated: true)
+                
+            }.disposed(by: rx.disposeBag)
+        
         
         let vmInput = HomeViewModel.HomeInput(category: .meituApi)
         let vmOutput = viewModel.transform(input: vmInput)
@@ -86,7 +108,7 @@ class ViewController: UIViewController {
     
     @IBAction func leftSideTap(_ sender: UIBarButtonItem) {
         
-       present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
+        present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
     }
 }
 

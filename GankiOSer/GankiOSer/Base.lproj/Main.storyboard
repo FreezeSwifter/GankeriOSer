@@ -41,6 +41,21 @@
             </objects>
             <point key="canvasLocation" x="-2650" y="162"/>
         </scene>
+        <!--美图-->
+        <scene sceneID="5Jm-RD-Vt9">
+            <objects>
+                <viewController storyboardIdentifier="ImageShowController" title="美图" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eOw-Hw-m0U" customClass="ImageShowController" customModule="GankiOSer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EOB-g7-hes">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="umb-zg-21G"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S1Y-k7-prg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1823" y="161"/>
+        </scene>
         <!--每日推荐-->
         <scene sceneID="amg-D0-w4a">
             <objects>
