@@ -56,15 +56,15 @@ class ViewController: UIViewController {
                 .modelSelected(MeituModel.self))
             .bind{ [unowned self] indexPath, model in
                 
+                let vc = ShowViewController()
                 let cell = self.collectionView.cellForItem(at: indexPath) as! HomeRecommendCell
-                cell.bkImageView.hero.id = indexPath.item.description
                 
-                let sb = UIStoryboard(name: "Main", bundle: nil)
-                let vc = sb.instantiateViewController(withIdentifier: "ImageShowController") as! ImageShowController
-                vc.heroID = indexPath.item.description
-            
+                cell.contentView.hero.id = indexPath.row.description
+                vc.id = indexPath.row.description
+                vc.color = UIColor.gray
+                
+//                self.navigationController?.present(vc, animated: true, completion: nil)
                 self.navigationController?.pushViewController(vc, animated: true)
-                
             }.disposed(by: rx.disposeBag)
         
         
@@ -108,7 +108,7 @@ class ViewController: UIViewController {
     
     @IBAction func leftSideTap(_ sender: UIBarButtonItem) {
         
-        present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
+//        present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
     }
 }
 

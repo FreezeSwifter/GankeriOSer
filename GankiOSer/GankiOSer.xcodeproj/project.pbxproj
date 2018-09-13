@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C0CEE39214952C40019C9F0 /* String+tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CEE38214952C40019C9F0 /* String+tools.swift */; };
-		9C0CEE3B214958C00019C9F0 /* ImageShowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CEE3A214958C00019C9F0 /* ImageShowController.swift */; };
+		9CA6FEF42149FC9C006366A5 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6FEF32149FC9C006366A5 /* ShowViewController.swift */; };
 		9CC5218B2146172600F776E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5218A2146172600F776E3 /* AppDelegate.swift */; };
 		9CC5218D2146172600F776E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5218C2146172600F776E3 /* ViewController.swift */; };
 		9CC521902146172600F776E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC5218E2146172600F776E3 /* Main.storyboard */; };
@@ -36,7 +36,7 @@
 		3E5349462CD74D0CA3670C5B /* Pods-GankiOSer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GankiOSer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GankiOSer/Pods-GankiOSer.debug.xcconfig"; sourceTree = "<group>"; };
 		4477126AA624039CDC0A0891 /* Pods-GankiOSer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GankiOSer.release.xcconfig"; path = "Pods/Target Support Files/Pods-GankiOSer/Pods-GankiOSer.release.xcconfig"; sourceTree = "<group>"; };
 		9C0CEE38214952C40019C9F0 /* String+tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+tools.swift"; sourceTree = "<group>"; };
-		9C0CEE3A214958C00019C9F0 /* ImageShowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageShowController.swift; sourceTree = "<group>"; };
+		9CA6FEF32149FC9C006366A5 /* ShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		9CC521872146172600F776E3 /* GankiOSer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GankiOSer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC5218A2146172600F776E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CC5218C2146172600F776E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				9CC5218A2146172600F776E3 /* AppDelegate.swift */,
 				9CC5219D21466E6600F776E3 /* BaseNavigationController.swift */,
 				9CC5218C2146172600F776E3 /* ViewController.swift */,
-				9C0CEE3A214958C00019C9F0 /* ImageShowController.swift */,
+				9CA6FEF32149FC9C006366A5 /* ShowViewController.swift */,
 				9CC5219F214671A200F776E3 /* LeftSideMenuController.swift */,
 				9CC5218E2146172600F776E3 /* Main.storyboard */,
 				9CC521912146172700F776E3 /* Assets.xcassets */,
@@ -344,12 +344,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C0CEE3B214958C00019C9F0 /* ImageShowController.swift in Sources */,
 				9CC521A0214671A200F776E3 /* LeftSideMenuController.swift in Sources */,
 				9CC5218D2146172600F776E3 /* ViewController.swift in Sources */,
 				9CF74591214794C5005E941D /* InterfaceNetworkMethod.swift in Sources */,
 				9CC5218B2146172600F776E3 /* AppDelegate.swift in Sources */,
 				9CF7458B214759A7005E941D /* HomeRecommendCell.swift in Sources */,
+				9CA6FEF42149FC9C006366A5 /* ShowViewController.swift in Sources */,
 				9CF7459321479565005E941D /* NetworkMethodImplement.swift in Sources */,
 				9CF7459521479843005E941D /* LoadingPlugin+Moya.swift in Sources */,
 				9CF745972147985E005E941D /* NetworkLoggerPlugin.swift in Sources */,
