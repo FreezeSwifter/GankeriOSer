@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     
     var dataSource: RxCollectionViewSectionedReloadDataSource<GankSection>!
     let viewModel = HomeViewModel()
+    var networkImage: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,14 +57,19 @@ class ViewController: UIViewController {
                 .modelSelected(MeituModel.self))
             .bind{ [unowned self] indexPath, model in
                 
-                let vc = ShowViewController()
+            
                 let cell = self.collectionView.cellForItem(at: indexPath) as! HomeRecommendCell
                 
-                cell.contentView.hero.id = indexPath.row.description
-                vc.id = indexPath.row.description
-                vc.color = UIColor.gray
+                cell.contentView.hero.id = indexPath.item.description
                 
-//                self.navigationController?.present(vc, animated: true, completion: nil)
+                let sb = UIStoryboard.init(name: "Main", bundle: nil)
+                let vc = sb.instantiateViewController(withIdentifier: "ShowViewController") as! ShowViewController
+                
+                vc.id = indexPath.item.description
+                if let image = cell.bkImageView.image {
+                    vc.image = image
+                }
+                
                 self.navigationController?.pushViewController(vc, animated: true)
             }.disposed(by: rx.disposeBag)
         

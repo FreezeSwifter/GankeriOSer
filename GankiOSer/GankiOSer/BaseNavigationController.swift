@@ -13,6 +13,8 @@ class BaseNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.hero.isEnabled = true
+        
         if #available(iOS 11.0, *) {
             navigationBar.prefersLargeTitles = true
             navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.black,

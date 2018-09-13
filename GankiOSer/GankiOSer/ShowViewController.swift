@@ -12,30 +12,17 @@ import Hero
 class ShowViewController: UIViewController {
     
     var id = ""
-    
-    var color: UIColor!
+    @IBOutlet weak var displayImageView: UIImageView!
+    var image: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = color
-        
+        self.displayImageView.image = image
         self.hero.isEnabled = true
         self.view.hero.id = id
         self.view.hero.modifiers = [.fade, .scale(0.5)]
         
-        let button = UIButton(type: .system)
-        button.setTitle("关闭", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.center = view.center
-        button.sizeToFit()
-        button.addTarget(self, action: Selector.buttonTapped, for: .touchUpInside)
-        view.addSubview(button)
-        
-    }
-    
-    func navigationBarInColor() -> UIColor {
-        return color
     }
     
     @objc func goback() {

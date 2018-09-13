@@ -41,6 +41,35 @@
             </objects>
             <point key="canvasLocation" x="-2650" y="162"/>
         </scene>
+        <!--美图-->
+        <scene sceneID="KmS-e6-95H">
+            <objects>
+                <viewController storyboardIdentifier="ShowViewController" title="美图" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4tU-On-tu3" customClass="ShowViewController" customModule="GankiOSer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nZ4-E4-W3A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jjo-cM-aTt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jjo-cM-aTt" firstAttribute="leading" secondItem="kLY-43-kxq" secondAttribute="leading" id="27r-xJ-jTd"/>
+                            <constraint firstItem="kLY-43-kxq" firstAttribute="trailing" secondItem="jjo-cM-aTt" secondAttribute="trailing" id="69g-Na-FuS"/>
+                            <constraint firstItem="kLY-43-kxq" firstAttribute="bottom" secondItem="jjo-cM-aTt" secondAttribute="bottom" id="8QF-Am-Rmd"/>
+                            <constraint firstItem="jjo-cM-aTt" firstAttribute="top" secondItem="kLY-43-kxq" secondAttribute="top" id="HAy-Pb-PwJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kLY-43-kxq"/>
+                    </view>
+                    <connections>
+                        <outlet property="displayImageView" destination="jjo-cM-aTt" id="tAj-P1-EUc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWc-Gs-eNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1579" y="178"/>
+        </scene>
         <!--每日推荐-->
         <scene sceneID="amg-D0-w4a">
             <objects>
